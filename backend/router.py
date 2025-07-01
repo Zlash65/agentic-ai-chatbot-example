@@ -5,7 +5,7 @@ from agents.ai_agent import get_response_from_agent
 router = APIRouter()
 
 ALLOWED_PROVIDERS = ["groq", "gemini"]
-ALLOWED_MODELS = ["llama-3.1-8b-instant", "llama3-70b-8192", "gemini-2.0-pro", "gemini-2.5-flash"]
+ALLOWED_MODELS = ["llama-3.1-8b-instant", "llama3-70b-8192", "gemini-2.0-flash", "gemini-2.5-flash"]
 
 @router.post("/chat")
 def chat(request: ChatRequest):
